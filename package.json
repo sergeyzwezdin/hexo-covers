@@ -45,6 +45,7 @@
         "imagemin-webp": "^5.1.0",
         "js-yaml": "^3.13.1",
         "pretty-hrtime": "^1.0.3",
-        "puppeteer": "^3.0.1"
+        "puppeteer": "^3.0.1",
+        "rimraf": "^3.0.2"
     }
 }
