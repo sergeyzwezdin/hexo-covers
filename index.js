@@ -4,6 +4,8 @@ hexo.config.covers = Object.assign(
         base_dir: '.covers',
         manifestFileName: 'covers.json',
         include: ['date', 'keywords'],
+        tagsUrl: 'tag',
+        categoriesUrl: 'category',
         source: {
             categories: {
                 data: '_data/categories.yml',
@@ -69,8 +71,8 @@ if (hexo.config.covers.enable) {
     hexo.extend.filter.register('before_generate', require('./lib/coversInvalidateFilter')(hexo));
 
     // Inlcude processed images into final output
-    // hexo.extend.generator.register('images', require('./lib/imagesGenerator')(hexo));
+    hexo.extend.generator.register('covers', require('./lib/coversGenerator')(hexo));
 
     // Inject image cache manifest into page metadata
-    // hexo.extend.filter.register('before_post_render', require('./lib/postMetadataFilter')(hexo));
+    hexo.extend.filter.register('before_post_render', require('./lib/postMetadataFilter')(hexo));
 }
