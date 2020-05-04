@@ -1,11 +1,13 @@
 hexo.config.covers = Object.assign(
     {
         enable: true,
+        title: 'blog.zwezdin.com',
         base_dir: '.covers',
         manifestFileName: 'covers.json',
         include: ['date', 'keywords'],
         tagsUrl: 'tag',
         categoriesUrl: 'category',
+        compress: true,
         source: {
             categories: {
                 data: '_data/categories.yml',
@@ -21,7 +23,7 @@ hexo.config.covers = Object.assign(
                 path: 'themes/blog.zwezdin.com/layout/microbrowser-template/page.html',
                 images: {
                     logo: 'themes/blog.zwezdin.com/source/assets/favicon/favicon-194x194.png',
-                    background: 'themes/blog.zwezdin.com/layout/microbrowser-template/bg.jpg'
+                    background: 'themes/blog.zwezdin.com/layout/microbrowser-template/bg.svg'
                 },
                 dimensions: {
                     width: 964,
@@ -32,7 +34,7 @@ hexo.config.covers = Object.assign(
                 path: 'themes/blog.zwezdin.com/layout/microbrowser-template/post.html',
                 images: {
                     logo: 'themes/blog.zwezdin.com/source/assets/favicon/favicon-194x194.png',
-                    background: 'themes/blog.zwezdin.com/layout/microbrowser-template/bg.jpg'
+                    background: 'themes/blog.zwezdin.com/layout/microbrowser-template/bg.svg'
                 },
                 dimensions: {
                     width: 964,
@@ -43,7 +45,7 @@ hexo.config.covers = Object.assign(
                 path: 'themes/blog.zwezdin.com/layout/microbrowser-template/category.html',
                 images: {
                     logo: 'themes/blog.zwezdin.com/source/assets/favicon/favicon-194x194.png',
-                    background: 'themes/blog.zwezdin.com/layout/microbrowser-template/bg.jpg'
+                    background: 'themes/blog.zwezdin.com/layout/microbrowser-template/bg.svg'
                 },
                 dimensions: {
                     width: 964,
@@ -54,7 +56,7 @@ hexo.config.covers = Object.assign(
                 path: 'themes/blog.zwezdin.com/layout/microbrowser-template/tag.html',
                 images: {
                     logo: 'themes/blog.zwezdin.com/source/assets/favicon/favicon-194x194.png',
-                    background: 'themes/blog.zwezdin.com/layout/microbrowser-template/bg.jpg'
+                    background: 'themes/blog.zwezdin.com/layout/microbrowser-template/bg.svg'
                 },
                 dimensions: {
                     width: 964,

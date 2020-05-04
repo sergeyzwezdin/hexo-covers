@@ -34,6 +34,7 @@
         "chalk": "^4.0.0",
         "express": "^4.17.1",
         "hexo-front-matter": "^1.0.0",
+        "image-size": "^0.8.3",
         "imagemin": "^7.0.1",
         "imagemin-advpng": "^5.1.0",
         "imagemin-guetzli": "^2.0.0",
