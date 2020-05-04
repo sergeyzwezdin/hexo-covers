@@ -1,3 +1,5 @@
+const path = require('path');
+
 hexo.config.covers = Object.assign(
     {
         enable: true,
@@ -20,10 +22,9 @@ hexo.config.covers = Object.assign(
         },
         templates: {
             page: {
-                path: 'themes/blog.zwezdin.com/layout/microbrowser-template/page.html',
+                path: path.relative(hexo.base_dir, path.resolve(__dirname, 'lib', 'templates', 'default.html')),
                 images: {
-                    logo: 'themes/blog.zwezdin.com/source/assets/favicon/favicon-194x194.png',
-                    background: 'themes/blog.zwezdin.com/layout/microbrowser-template/bg.svg'
+                    background: path.relative(hexo.base_dir, path.resolve(__dirname, 'lib', 'templates', 'bg.svg'))
                 },
                 dimensions: {
                     width: 964,
@@ -31,10 +32,9 @@ hexo.config.covers = Object.assign(
                 }
             },
             post: {
-                path: 'themes/blog.zwezdin.com/layout/microbrowser-template/post.html',
+                path: path.relative(hexo.base_dir, path.resolve(__dirname, 'lib', 'templates', 'default.html')),
                 images: {
-                    logo: 'themes/blog.zwezdin.com/source/assets/favicon/favicon-194x194.png',
-                    background: 'themes/blog.zwezdin.com/layout/microbrowser-template/bg.svg'
+                    background: path.relative(hexo.base_dir, path.resolve(__dirname, 'lib', 'templates', 'bg.svg'))
                 },
                 dimensions: {
                     width: 964,
@@ -42,10 +42,9 @@ hexo.config.covers = Object.assign(
                 }
             },
             category: {
-                path: 'themes/blog.zwezdin.com/layout/microbrowser-template/category.html',
+                path: path.relative(hexo.base_dir, path.resolve(__dirname, 'lib', 'templates', 'default.html')),
                 images: {
-                    logo: 'themes/blog.zwezdin.com/source/assets/favicon/favicon-194x194.png',
-                    background: 'themes/blog.zwezdin.com/layout/microbrowser-template/bg.svg'
+                    background: path.relative(hexo.base_dir, path.resolve(__dirname, 'lib', 'templates', 'bg.svg'))
                 },
                 dimensions: {
                     width: 964,
@@ -53,10 +52,9 @@ hexo.config.covers = Object.assign(
                 }
             },
             tag: {
-                path: 'themes/blog.zwezdin.com/layout/microbrowser-template/tag.html',
+                path: path.relative(hexo.base_dir, path.resolve(__dirname, 'lib', 'templates', 'default.html')),
                 images: {
-                    logo: 'themes/blog.zwezdin.com/source/assets/favicon/favicon-194x194.png',
-                    background: 'themes/blog.zwezdin.com/layout/microbrowser-template/bg.svg'
+                    background: path.relative(hexo.base_dir, path.resolve(__dirname, 'lib', 'templates', 'bg.svg'))
                 },
                 dimensions: {
                     width: 964,

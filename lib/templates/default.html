@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta http-equiv="x-ua-compatible" content="ie=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.5, shrink-to-fit=no, viewport-fit=cover" />
+        <title></title>
+        <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+        <style type="text/css">
+            /* global */
+            html {
+                font-family: 'PT Sans', sans-serif;
+                box-sizing: border-box;
+                overflow: hidden;
+            }
+            body {
+                margin: 0;
+                padding: 0;
+                width: 968px;
+                height: 504px;
+                box-sizing: border-box;
+                -webkit-text-size-adjust: none;
+                -moz-text-size-adjust: none;
+                -ms-text-size-adjust: none;
+                text-size-adjust: none;
+                overflow: hidden;
+            }
+        </style>
+        <style type="text/css">
+            .card {
+                margin: 0;
+                padding: 0;
+                width: 968px;
+                height: 504px;
+                position: relative;
+                background-color: #424242;
+                overflow: hidden;
+                background-size: cover;
+                background-position: center;
+            }
+
+            .card__bgimage {
+                margin: 0;
+                padding: 0;
+                display: block;
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+                background-size: cover;
+                background-position: center;
+            }
+
+            .card__container {
+                margin: 0;
+                padding: 0;
+                display: block;
+                width: 100%;
+                height: 100%;
+                background: linear-gradient(90deg, rgba(33, 33, 33, 0.9) 0%, rgba(66, 66, 66, 0.88) 34.38%, rgba(66, 66, 66, 0.88) 63.02%, rgba(33, 33, 33, 0.9) 100%);
+            }
+
+            .card__logo {
+                opacity: 0.4;
+                display: none;
+                position: absolute;
+                top: 77px;
+                right: 104px;
+                width: 104px;
+                height: 104px;
+                z-index: 1;
+                border: none;
+            }
+
+            .card__link {
+                margin: 0;
+                padding: 0;
+                font-family: 'PT Sans', sans-serif;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 40px;
+                line-height: 60px;
+                letter-spacing: -2px;
+                color: #EEEEEE;
+                opacity: 0.4;
+                position: absolute;
+                top: 68px;
+                left: 104px;
+                z-index: 50;
+            }
+
+            .card__title {
+                margin: 0;
+                padding: 0;
+                font-family: 'PT Sans', sans-serif;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 64px;
+                line-height: 72px;
+                letter-spacing: -4px;
+                max-height: calc(72px * 3);
+                overflow: hidden;
+                color: #ECEFF1;
+                position: absolute;
+                bottom: 59px;
+                left: 104px;
+                right: 216px;
+                z-index: 50;
+            }
+
+            .card__title.card__title_shift {
+                bottom: calc(59px + 72px);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="card">
+            <div class="card__bgimage">
+                <div class="card__container">
+                    <img class="card__logo" />
+                    <p class="card__link"></p>
+                    <p class="card__title"></p>
+                </div>
+            </div>
+        </div>
+
+        <script type="text/javascript">
+            function getParameterByName(name, url) {
+                if (!url) url = window.location.href;
+
+                name = name.replace(/[\[\]]/g, '\\$&');
+
+                const regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)');
+                const results = regex.exec(url);
+
+                if (!results) return '';
+
+                if (!results[2]) return '';
+
+                return decodeURIComponent(results[2].replace(/\+/g, ' '));
+            }
+
+            window.addEventListener('load', () => {
+                const titleElement = document.querySelector('.card__title');
+                if (titleElement.clientHeight < 100) {
+                    // single line
+                    titleElement.classList.add('card__title_shift');
+                }
+
+                const blogTitle = getParameterByName('blogTitle');
+                const title = getParameterByName('title');
+                const logoUrl = getParameterByName('image_logo');
+                const imageBackgroundUrl = getParameterByName('image_background');
+                const postImageBackgroundUrl = getParameterByName('image_image');
+                const hide_logo = getParameterByName('hide_logo') === 'true';
+                const hide_title = getParameterByName('hide_title') === 'true';
+                const hide_subtitle = getParameterByName('hide_subtitle') === 'true';
+                const disable_fade = getParameterByName('disable_fade') === 'true';
+
+                if (blogTitle) {
+                    document.querySelector('.card__link').innerText = blogTitle;
+                }
+
+                document.querySelector('.card__title').innerText = title;
+
+                if (logoUrl) {
+                    document.querySelector('.card__logo').src = logoUrl;
+                    document.querySelector('.card__logo').style.display = 'block';
+                } else {
+                    document.querySelector('.card__logo').style.display = 'none';
+                }
+
+                if (imageBackgroundUrl) {
+                    document.querySelector('.card').style.backgroundImage = `url(${imageBackgroundUrl})`;
+                }
+
+                if (imageBackgroundUrl) {
+                    document.querySelector('.card__bgimage').style.backgroundImage = `url(${postImageBackgroundUrl})`;
+                }
+
+                if (hide_logo) {
+                    document.querySelector('.card__logo').style.display = 'none';
+                }
+
+                if (hide_title) {
+                    document.querySelector('.card__title').style.display = 'none';
+                }
+
+                if (hide_subtitle) {
+                    document.querySelector('.card__link').style.display = 'none';
+                }
+
+                if (disable_fade) {
+                    document.querySelector('.card__container').style.background = 'transparent';
+                }
+
+                if ((titleElement.scrollHeight - 2 > titleElement.clientHeight) || (titleElement.scrollWidth > titleElement.clientWidth)) {
+                    console.error(`The title "${titleElement.innerText}" doesn't fit into the page.\nTotal size: ${titleElement.scrollWidth}px × ${titleElement.scrollHeight}px, visible size: ${titleElement.clientWidth}px × ${titleElement.clientHeight}px.`);
+                }
+            });
+        </script>
+    </body>
+</html>
