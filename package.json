@@ -1,6 +1,6 @@
 {
     "name": "hexo-covers",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "description": "Microbrowsers cover generator for Hexo static site generator",
     "main": "index.js",
     "scripts": {
