@@ -6,7 +6,7 @@ hexo.config.covers = Object.assign(
         title: 'blog.zwezdin.com',
         base_dir: '.covers',
         manifestFileName: 'covers.json',
-        include: ['date', 'keywords'],
+        include: ['keywords'],
         tagsUrl: 'tag',
         categoriesUrl: 'category',
         compress: true,
