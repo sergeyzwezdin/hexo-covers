@@ -75,4 +75,9 @@ if (hexo.config.covers.enable) {
 
     // Inject image cache manifest into page metadata
     hexo.extend.filter.register('before_post_render', require('./lib/postMetadataFilter')(hexo));
+
+    // Helper to resolve cover from the current post context
+    hexo.extend.helper.register('resolve_cover', require('./lib/resolveCoverHelper')(hexo));
+    hexo.extend.helper.register('resolve_category_cover', require('./lib/resolveCategoryCoverHelper')(hexo));
+    hexo.extend.helper.register('resolve_tag_cover', require('./lib/resolveTagCoverHelper')(hexo));
 }
