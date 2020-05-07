@@ -28,10 +28,11 @@
     },
     "homepage": "https://github.com/sergeyzwezdin/hexo-covers#readme",
     "peerDependencies": {
-        "hexo": "^4.2.0"
+        "hexo": "^4.2.0",
+        "chalk": "^4.0.0",
+        "pretty-hrtime": "^1.0.3"
     },
     "dependencies": {
-        "chalk": "^4.0.0",
         "express": "^4.17.1",
         "hexo-front-matter": "^1.0.0",
         "image-size": "^0.8.3",
@@ -45,8 +46,11 @@
         "imagemin-pngquant": "^8.0.0",
         "imagemin-webp": "^5.1.0",
         "js-yaml": "^3.13.1",
-        "pretty-hrtime": "^1.0.3",
         "puppeteer": "^3.0.1",
         "rimraf": "^3.0.2"
+    },
+    "devDependencies": {
+        "chalk": "^4.0.0",
+        "pretty-hrtime": "^1.0.3"
     }
 }
