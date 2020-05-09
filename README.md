@@ -150,7 +150,14 @@ TBD
 ## Templates
 ### How the default template works
 
-TBD
+The template is a regular HTML file. During the cover build `hexo-covers` starts web-server that serves the template. After that puppeteer is used to take a screenshot of the page.
+
+There is [a default template](lib/templates) that looks like this way:
+
+![Default look of the template](https://user-images.githubusercontent.com/800755/81468176-5eb39b00-91f7-11ea-840d-7f1815df99f6.jpg)
+
+
+If you are OK with the style of the default template, you do not need to do anything about it. If you want to customize the look of the cover, read the next section.
 
 ### Customizing the template
 
