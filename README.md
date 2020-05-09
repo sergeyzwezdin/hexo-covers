@@ -227,7 +227,10 @@ covers:
 | `source.categories.images` | `false` | `_covers/categories` | Path to images folder for categories (for more information see above). |
 | `source.tags.data` | `false` | `_data/tags.yml` | Path to yaml file that provides additional data for tags (for more information see above). |
 | `source.tags.images` | `false` | `_covers/tags` | Path to images folder for tags (for more information see above). |
-
+| `templates` | `false` |  | Definition of templates for pages, posts, tags, and categories. |
+| `templates.page.path`<br/>`templates.post.path`<br/>`templates.category.path`<br/>`templates.tag.path` | `true` | Path to default template | Relative path to template file. |
+| `templates.page.images`<br/>`templates.post.images`<br/>`templates.category.images`<br/>`templates.tag.images` | `false` | `{ background: "lib/templates/bg.svg" }` | Images that will be passed into template during generating. |
+| `templates.page.dimensions`<br/>`templates.post.dimensions`<br/>`templates.category.dimensions`<br/>`templates.tag.dimensions` | `true` | `{ width: 964, height: 504 }` | Size of generated cover image for the template. |
 
 ## Manifest
 
