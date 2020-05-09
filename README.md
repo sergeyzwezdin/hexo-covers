@@ -234,4 +234,61 @@ covers:
 
 ## Manifest
 
-TBD
+Normally, you shouldn't care about the manifest structure. But if you're curious, the manifest is a JSON file that contains key-value collection of processed files. The key is a relative path to the image. The value is information about the processed cover. All items are grouped into sections — `tags`, `categories`, `pages`, `posts`.
+
+Here is an example:
+
+```json
+{
+    "tags": {
+        "dotnet": {
+            "file": "tags/8ec70aeb/dotnet@cover.jpg",
+            "size": 17476,
+            "hash": "8ec70aebbc51e28b158a13af745f1bb3",
+            "type": "jpg",
+            "dimensions": {
+                "w": 964,
+                "h": 504
+            }
+        }
+    },
+    "categories": {
+        "mobile": {
+            "file": "categories/95306cf2/mobile@cover.jpg",
+            "size": 28816,
+            "hash": "95306cf2703054c1fe91c432f82a8721",
+            "type": "jpg",
+            "dimensions": {
+                "w": 964,
+                "h": 504
+            }
+        }
+    },
+    "pages": {
+        "terms/index.md": {
+            "file": "pages/83c8a774/index@cover.jpg",
+            "size": 34955,
+            "hash": "83c8a77498a457a187a007c7f4a408c7",
+            "type": "jpg",
+            "dimensions": {
+                "w": 964,
+                "h": 504
+            }
+        }
+    },
+    "posts": {
+        "_posts/2014/fronttalks-2014.md": {
+            "file": "posts/2c7f8a02/fronttalks_2014@cover.jpg",
+            "size": 29735,
+            "hash": "2c7f8a02c9c676e12487c0fc64e65c4f",
+            "type": "jpg",
+            "dimensions": {
+                "w": 964,
+                "h": 504
+            }
+        }
+    }
+}
+```
+
+In page template you can also access `cover` property that will contain the part of the manifest that related to the current page.
