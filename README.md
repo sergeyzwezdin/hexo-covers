@@ -188,7 +188,7 @@ covers:
                 width: 964
                 height: 504
         category:
-            path: themes/theme1layout/microbrowser-template/category.html
+            path: themes/theme1/layout/microbrowser-template/category.html
             images:
                 logo: themes/theme1/source/assets/favicon/favicon-194x194.png
                 background: themes/theme1/layout/microbrowser-template/bg.svg
