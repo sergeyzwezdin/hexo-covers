@@ -15,6 +15,8 @@
 
 ## How it works
 
+TBD
+
 ## Requirements
 
 - Hexo: 4.x
@@ -24,9 +26,10 @@
 
 1. Once the plugin is installed and enabled, it will scan the website content during the build.
 2. Covers will be generated for all posts, pages, tags, and categories using [default templates](lib/templates). To do that `hexo-covers` runs Chromium via puppeteer for every cover and takes the screenshot.
-3. If the post title doesn't fit the image, an error message will be generated in the console during the build. It guarantees that you won't have "broken" previews for any page.
-4. Once `hexo-covers` generated the covers, you'll need to specify special meta tags so microbrowsers could discover it (for more information see below).
-5. You post your link via messengers or social networks and see a nice preview 🎉
+3. Once processing of the cover is done, the result files will be stored in special folder (`/.covers/`) and included into the cache manifest (`/.covers/covers.json`). You should not care about the folder structure in this folder. Ensure that `.covers` folder added to your repo. If it's ignored, cover processing will start each time, which is time-consuming.
+4. If the post title doesn't fit the image, an error message will be generated in the console during the build. It guarantees that you won't have "broken" previews for any page.
+5. Once `hexo-covers` generated the covers, you'll need to specify special meta tags so microbrowsers could discover it (for more information see below).
+6. You post your link via messengers or social networks and see a nice preview 🎉
 
 ### Defining page metadata
 
