@@ -143,10 +143,18 @@ Here are a few examples of how to define these partials:
 <%_ } _%>
 ```
 
+### Additional data for tags and categories
+
+TBD
+
 ## Templates
 ### How the default template works
 
+TBD
+
 ### Customizing the template
+
+TBD
 
 ## Configuration
 
@@ -205,5 +213,22 @@ covers:
                 height: 504
 ```
 
+| Key | Required | Default value | Description |
+| --- | --- | --- | --- |
+| `enable` | `false` | `true` | Flag to disable plugin execution. |
+| `title` | `false` | Your website title in Hexo configuration | The website title value that will be passed into the template. |
+| `base_dir` | `false` | `.images` | Directory name to store cover cache. |
+| `manifestFileName` | `false` | `images.json` | File name to store cover cache manifest (for more info see below). |
+| `include` | `false` | `[ keywords ]` | Frontmatter keys that will be available at the template during preview generating. |
+| `tagsUrl` | `false` | `tag` | The URL where tag covers will be produced. |
+| `categoriesUrl` | `false` | `tag` | The URL where category covers will be produced. |
+| `compress` | `false` | `true` | Determines if output cover images will be compressed. |
+| `source.categories.data` | `false` | `_data/categories.yml` | Path to yaml file that provides additional data for categories (for more information see above). |
+| `source.categories.images` | `false` | `_covers/categories` | Path to images folder for categories (for more information see above). |
+| `source.tags.data` | `false` | `_data/tags.yml` | Path to yaml file that provides additional data for tags (for more information see above). |
+| `source.tags.images` | `false` | `_covers/tags` | Path to images folder for tags (for more information see above). |
+
+
 ## Manifest
 
+TBD
