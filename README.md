@@ -153,7 +153,34 @@ Here are a few examples of how to define these partials:
 
 ### Additional data for pages and posts
 
-TBD
+You can specify custom data for every page that will be passed in the template during the build. To do that add the `cover` key in page/post frontmatter:
+
+```md
+---
+title: Test post
+cover:
+    title: My test post
+    image: wp3060116.jpg
+    hide_logo: false
+    hide_title: false
+    hide_subtitle: false
+    disable_fade: false
+    raw: false
+---
+
+Post text
+```
+
+There are few predefined key that you can pass in frontmatter:
+- `title` — overrides title of the post in the cover
+- `image` — custom background image for the cover
+- `hide_logo` — hides blog logo
+- `hide_title` — hides post title
+- `hide_subtitle` — hides post sub-title
+- `disable_fade` — disables background fading
+- `raw` — do not process the cover with standard workflow, just copy `image` instead
+
+You can use these params if you use the default template. You can also specify your own keys - all of them will be passed into the template as a query string params. It's useful when you build a custom template and want to show more data.
 
 ### Additional data for tags and categories
 
