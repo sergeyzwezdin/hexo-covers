@@ -11,6 +11,8 @@
 * Allows to easily **customize template**.
 * Supports generating covers for posts, pages, tags, and categories.
 
+![An example](https://user-images.githubusercontent.com/800755/81463612-2484d200-91d4-11ea-998d-e19342dc4dff.jpg)
+
 ## How it works
 
 ## Requirements
