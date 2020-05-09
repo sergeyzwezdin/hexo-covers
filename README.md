@@ -180,7 +180,7 @@ There are few predefined key that you can pass in frontmatter:
 - `disable_fade` — disables background fading
 - `raw` — do not process the cover with standard workflow, just copy `image` instead
 
-You can use these params if you use the default template. You can also specify your own keys - all of them will be passed into the template as a query string params. It's useful when you build a custom template and want to show more data.
+You can use these params if you use [the default template](lib/templates). You can also specify your own keys - all of them will be passed into the template as a query string params. It's useful when you build a custom template and want to show more data.
 
 ### Additional data for tags and categories
 
