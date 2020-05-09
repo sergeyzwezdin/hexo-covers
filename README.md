@@ -19,7 +19,7 @@
 2. For every item `hexo-covers` runs Chromium via puppeteer and takes the screenshot.
 3. Every screenshot is compressed and put into the cache folder.
 4. During the website build all covers are included in the output build.
-5. You add page metadata using `resolve_cover`, `resolve_tag_cover`, `resolve_category_cover` helpers. For more information see below.
+5. You add page metadata using `resolve_cover`, `resolve_tag_cover`, `resolve_category_cover` helpers. For more information [see below](#defining-page-metadata).
 
 ## Requirements
 
