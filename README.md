@@ -10,3 +10,18 @@
 * Produces **web-optimized**, compressed images.
 * Allows to easily **customize template**.
 * Supports generating covers for posts, pages, tags, and categories.
+
+## How it works
+
+## Requirements
+
+- Hexo: 4.x
+- Node 12+
+
+## Usage
+
+## Configuration
+
+## Manifest
+
+## Customizing the template
