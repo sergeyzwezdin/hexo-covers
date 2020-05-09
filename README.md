@@ -15,7 +15,11 @@
 
 ## How it works
 
-TBD
+1. The plugin scans all pages, posts, categories, and tags. 
+2. For every item `hexo-covers` runs Chromium via puppeteer and takes the screenshot.
+3. Every screenshot is compressed and put into the cache folder.
+4. During the website build all covers are included in the output build.
+5. You add page metadata using `resolve_cover`, `resolve_tag_cover`, `resolve_category_cover` helpers. For more information see below.
 
 ## Requirements
 
@@ -145,6 +149,11 @@ Here are a few examples of how to define these partials:
     <meta name="twitter:image:src" content="<%= full_url_for(cover.file) %>" />
 <%_ } _%>
 ```
+
+
+### Additional data for pages and posts
+
+TBD
 
 ### Additional data for tags and categories
 
