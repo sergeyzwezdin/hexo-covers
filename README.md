@@ -5,3 +5,8 @@
 > As more of our conversations happen in group chats and slack channels, link previews are an important way for you to engage users before they start the journey on your site. To help users take the leap and visit your site, we need to make sure that all our pages are annotated with microdata. Better yet, we can use these previews to create compelling visual summaries.
 >
 > — <cite>Colin Bendell</cite> • [Microbrowsers are Everywhere](https://24ways.org/2019/microbrowsers-are-everywhere/)
+
+* **Generates preview covers** for your website.
+* Produces **web-optimized**, compressed images.
+* Allows to easily **customize template**.
+* Supports generating covers for posts, pages, tags, and categories.
