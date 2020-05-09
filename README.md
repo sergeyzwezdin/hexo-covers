@@ -161,7 +161,11 @@ If you are OK with the style of the default template, you do not need to do anyt
 
 ### Customizing the template
 
-TBD
+If you want to customize the look of the cover, feel free to create an HTML file somewhere in the project folder. To let `hexo-covers` know where is your template located, specify the relative path in the `templates` section of configuration (see below). Optionally, you can define additional images that will be passed into the template. All paths are relative, so you can use any images from your project you want.
+
+Use [the default template](lib/templates) as a reference on how to create your own template. Pay attention to JavaScript code in the default template. There is a code to extract params from the query string (which passed by `hexo-covers`) as well as the code that throws an error when title text is too large to render.
+
+Any JavaScript error that throws on the template page will generate error in Hexo console during the build. It introduced intentionally to avoid generating "broken" covers.
 
 ## Configuration
 
