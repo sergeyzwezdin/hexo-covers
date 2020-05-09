@@ -23,7 +23,7 @@
 ## Usage
 
 1. Once the plugin is installed and enabled, it will scan the website content during the build.
-2. Covers will be generated for all posts, pages, tags, and categories using [default templates](lib/templates).
+2. Covers will be generated for all posts, pages, tags, and categories using [default templates](lib/templates). To do that `hexo-covers` runs Chromium via puppeteer for every cover and takes the screenshot. 
 3. Once `hexo-covers` generated the covers, you'll need to specify special meta tags so microbrowsers could discover it (for more information see below).
 4. You post your link via messengers or social networks and see a nice preview 🎉
 
