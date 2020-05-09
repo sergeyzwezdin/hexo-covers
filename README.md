@@ -20,8 +20,11 @@
 
 ## Usage
 
+## Defining page metadata
+
+## Customizing the template
+
 ## Configuration
 
 ## Manifest
 
-## Customizing the template
