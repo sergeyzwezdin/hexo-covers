@@ -150,5 +150,60 @@ Here are a few examples of how to define these partials:
 
 ## Configuration
 
+To configure the plugin add `covers` key to the Hexo config file. For example:
+
+```yaml
+covers:
+    enable: true
+    title: 'Your blog title'
+    base_dir: '.covers'
+    manifestFileName: 'covers.json'
+    include:
+        - keywords
+    tagsUrl: tag
+    categoriesUrl: category
+    compress: true
+    source:
+        categories:
+            data: _data/categories.yml
+            images: _covers/categories
+        tags:
+            data: _data/tags.yml
+            images: _covers/tags
+    templates:
+        page:
+            path: themes/theme1/layout/microbrowser-template/page.html
+            images:
+                logo: themes/theme1/source/assets/favicon/favicon-194x194.png
+                background: themes/theme1/layout/microbrowser-template/bg.svg
+            dimensions:
+                width: 964
+                height: 504
+        post:
+            path: themes/theme1/layout/microbrowser-template/post.html
+            images:
+                logo: themes/theme1/source/assets/favicon/favicon-194x194.png
+                background: themes/theme1/layout/microbrowser-template/bg.svg
+            dimensions:
+                width: 964
+                height: 504
+        category:
+            path: themes/theme1layout/microbrowser-template/category.html
+            images:
+                logo: themes/theme1/source/assets/favicon/favicon-194x194.png
+                background: themes/theme1/layout/microbrowser-template/bg.svg
+            dimensions:
+                width: 964
+                height: 504
+        tag:
+            path: themes/theme1/layout/microbrowser-template/tag.html
+            images:
+                logo: themes/theme1/source/assets/favicon/favicon-194x194.png
+                background: themes/theme1/layout/microbrowser-template/bg.svg
+            dimensions:
+                width: 964
+                height: 504
+```
+
 ## Manifest
 
