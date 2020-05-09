@@ -184,7 +184,23 @@ You can use these params if you use [the default template](lib/templates). You c
 
 ### Additional data for tags and categories
 
-TBD
+By default covers for tags and categories generated with name that passed from the URL (e.g. for `/tag/aspnet` the name will be `aspnet`). If you want to display a friendly name for tags and categories, you can specify it in an additional data file.
+
+To do that add special configuration key `source.categories.data` and `source.tags.data` and specify a relative path to the data files (find more information in `Configuration` section below).
+
+Here is an example of how you can define the data file:
+
+```yaml
+aspnet:
+    title: ASP.NET
+    background: aspnet.webp
+
+frontend:
+    title: Frontend Development
+    background: frontend.webp
+```
+
+In addition, you can specify background images and other custom keys that will be passed in the template file during the build via query string parameters. Also, you'll need to specify `source.categories.images` and `source.tags.images` parameters in configuration to be able to override cover background via data file.
 
 ## Templates
 ### How the default template works
