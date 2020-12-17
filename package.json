@@ -28,29 +28,29 @@
     },
     "homepage": "https://github.com/sergeyzwezdin/hexo-covers#readme",
     "peerDependencies": {
-        "hexo": "^4.2.0",
-        "chalk": "^4.0.0",
+        "hexo": "^5.2.0",
+        "chalk": "^4.1.0",
         "pretty-hrtime": "^1.0.3"
     },
     "dependencies": {
         "express": "^4.17.1",
-        "hexo-front-matter": "^1.0.0",
-        "image-size": "^0.8.3",
+        "hexo-front-matter": "^2.0.0",
+        "image-size": "^0.9.3",
         "imagemin": "^7.0.1",
-        "imagemin-advpng": "^5.1.0",
-        "imagemin-guetzli": "^2.0.0",
-        "imagemin-jpeg-recompress": "^6.0.0",
-        "imagemin-mozjpeg": "^8.0.0",
-        "imagemin-optipng": "^7.1.0",
-        "imagemin-pngout": "^4.0.0",
-        "imagemin-pngquant": "^8.0.0",
-        "imagemin-webp": "^5.1.0",
-        "js-yaml": "^3.13.1",
-        "puppeteer": "^3.0.1",
+        "imagemin-advpng": "^6.0.0",
+        "imagemin-guetzli": "^3.0.0",
+        "imagemin-jpeg-recompress": "^7.0.0",
+        "imagemin-mozjpeg": "^9.0.0",
+        "imagemin-optipng": "^8.0.0",
+        "imagemin-pngout": "^5.0.0",
+        "imagemin-pngquant": "^9.0.1",
+        "imagemin-webp": "^6.0.0",
+        "js-yaml": "^3.14.1",
+        "puppeteer": "^5.5.0",
         "rimraf": "^3.0.2"
     },
     "devDependencies": {
-        "chalk": "^4.0.0",
+        "chalk": "^4.1.0",
         "pretty-hrtime": "^1.0.3"
     }
 }
