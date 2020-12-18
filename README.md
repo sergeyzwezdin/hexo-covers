@@ -23,7 +23,7 @@
 
 ## Requirements
 
-- Hexo: 4.x
+- Hexo: 5.x
 - Node 12+
 
 ## Usage
